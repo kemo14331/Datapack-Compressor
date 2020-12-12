@@ -117,6 +117,7 @@ func main() {
 			if !opts.DoNotRmCmt && filepath.Ext(path) == ".mcfunction" {
 				newst := ""
 				for _, line := range strings.Split(string(bytes), "\n") {
+					line = strings.TrimSpace(line)
 					if utf8.RuneCountInString(line) < 2 || line[0] == '\n' || line[0] == '#' {
 						continue
 					}

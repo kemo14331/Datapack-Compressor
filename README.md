@@ -18,6 +18,13 @@ Minecraftのデータパックを圧縮するツール
 |-f |--exclude-remove-file [String]|削除から除外するファイルパスを正規表現で指定(複数可)|
 |-s | --show-log |圧縮したファイル一覧を表示する|  
   
+  #### コマンド例
+  ```console
+  dpc src/mydatapack -o release/release_v1.zip -s -f update_log\.txt
+  ```  
+  mydatapackが圧縮され、release_v1.zipとして出力されます。  
+  `update_log.txt`は除外されずにzipファイル内に出力されます。
+  
 ## Downloads  
  [Release](https://github.com/kemo14331/Datapack-Compressor/releases)
 
